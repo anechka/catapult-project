@@ -1,0 +1,60 @@
+
+/*CANDIDATE PAGE STYLES BEGIN*/
+
+.bg-women-1, .bg-women-2 {
+
+  min-height: 623px;
+  background: url(../images/women-1.png) 50% 0 no-repeat;
+  background-size: cover;
+
+}
+
+.bg-women-2 {
+  background: url(../images/women-2.png) 50% 0 no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1500px) {
+
+  .bg-women-1 {
+
+    background-position: 60% 0;
+
+  }
+
+  .bg-women-2 {
+
+    background-position: 70% 0;
+
+  }
+
+}
+
+.signing-up-link {
+  color: $default-green;
+}
+
+.join-now-box {
+  height: 106px;
+  background: $deep-gren;
+  color: $default-white;
+  font-size: 36px;
+  font-family: "Sofia Pro Medium", Arial, Helvetica, sans-serif;
+  line-height: 3;
+  span {
+    margin-right: 20px;
+
+    a {
+      color: $default-white;
+      text-decoration: none;
+    }
+
+  }
+
+  span.icon-play {
+    font-size: 24px;
+  }
+
+}
+
+/*CANDIDATE PAGE STYLES END*/

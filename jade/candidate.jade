@@ -1,0 +1,285 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+        title Candidate
+        // Bootstrap
+        link(href='../bower_components/bootstrap/dist/css/bootstrap.css', rel='stylesheet')
+        // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+        // WARNING: Respond.js doesn't work if you view the page via file://
+        //if lt IE 9
+          script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+          script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+        link(href="css/main.min.css", rel='stylesheet')
+        link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', rel='stylesheet')
+
+    body
+        .container-fluid
+            .row
+                header
+                    nav.navbar.navbar-default.navbar-fixed-top.navigation
+                        .container
+                            .row
+
+                                .col-md-2
+                                    a(href="#")
+                                        img.img-responsive(src="images/logo_catapult.png", alt="Catapult Logo")
+
+                                .col-md-10
+                                    .navbar-header
+                                        button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbarCollapse")
+                                            span.sr-only Toggle navigation
+                                            span.icon-bar
+                                            span.icon-bar
+                                            span.icon-bar
+                                    .collapse.navbar-collapse.gutter-0(id="navbarCollapse")
+                                        ul.nav.navbar-nav.pull-right.main-navbar
+                                            li
+                                                a(href="#") How it works
+                                            li
+                                                a(href="#") About us
+
+                                            li
+                                                a(href="#") For Employers
+
+
+
+                    .col-md-12.carousel-container
+
+                        .row
+
+                            #carousel-content.carousel.slide(data-ride='carousel')
+                                // Indicators
+                                ol.carousel-indicators
+                                    li.active(data-target='#carousel-content', data-slide-to='0')
+                                    li(data-target='#carousel-content', data-slide-to='1')
+                                    li(data-target='#carousel-content', data-slide-to='2')
+                                // Wrapper for slides
+                                .carousel-inner(role='listbox')
+                                    .item.active
+                                        .col-md-12.gutter-0.bg-women-1
+                                            .container
+                                                .row
+                                                    .col-md-12
+                                                        h1.staff-header
+                                                            span Looking for a job?
+                                                            br
+                                                            | We're here for you
+
+
+
+                                    .item
+                                        .col-md-12.gutter-0.bg-women-2
+                                            .container
+                                                .row
+                                                    .col-md-12
+                                                        h1.staff-header
+                                                            span Staff on holiday?
+                                                            br
+                                                            | We're here for you
+
+
+
+                                // Controls
+                                a.left.carousel-control.control-left(href='#carousel-content', role='button', data-slide='prev')
+                                    span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                                    span.sr-only Previous
+                                a.right.carousel-control.control-right(href='#carousel-content', role='button', data-slide='next')
+                                    span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                                    span.sr-only Next
+
+
+                section#CatapultWorks
+                    .row
+                        .col-md-12.icons-container.section-box
+                            .container
+                                .row
+                                    .col-md-12.text-center
+                                        h2.subheader How Catapult Works
+
+                                .row
+                                    .col-md-4.text-center
+                                        img.img-responsive(src="images/icon_paper_lg.png", alt="Icon Paper")
+                                        h4.icon-subheader.margin-top-60 Join and get on the waitlist
+                                        p Due to overwhelming interest, we are currently only activating a few profiles every week. Join now to get on our waitlist.
+
+                                    .col-md-4.text-center
+                                        img.img-responsive(src="images/icon_device_lg.png", alt="Icon Device")
+                                        h4.icon-subheader.margin-top-60 Download the app & complete your profile
+                                        p Download the app, complete your profile and let temporary jobs come to you without applications or interviews.
+
+                                    .col-md-4.text-center
+                                        img.img-responsive(src="images/icon_tuxedo.png", alt="Icon Tuxedo")
+                                        h4.icon-subheader.margin-top-60 Be your own boss
+                                        p You can accept or decline any job offer, or contact the employer for more details. Get paid directly on your phone.
+
+                    .row
+                        .col-md-12.join-now-box
+                            .container
+                                .row
+                                    .col-md-12.text-center
+                                        span
+                                            a(href="#") Join Now
+                                        span.glyphicon.glyphicon-play.icon-play(aria-hidden="true")
+
+
+                    .row
+                        .col-md-12.margin-top-60
+                            .container
+                                .row
+                                    .col-md-12
+                                        .media
+                                            .media-left.col-md-3.col-xs-12.media-image
+                                                a(href='#')
+                                                    img.img-responsive.media-object(src="images/icon_paper_lg.png", alt="Icon Paper")
+                                            .media-body
+                                                h2.media-heading.subheader.margin-bottom-0 Stop wasting time on applications & interviews.
+                                                h3.subheader-small You'll never have to apply or interview for a temp job again.
+
+                                                p   Once you have signed up and we've activated your profile, employers have all they need to find you and make you an offer.
+                                                    |There's no need for an in-person interview; instead job offers arrive straight to your phone.
+
+                                                p.margin-top-30 Everyone saves time, money and energy by interacting through the Catapult app. You'll even get paid directly through the app.
+
+
+
+                    .row
+                        .col-md-12.margin-top-60
+                            .container
+                                .row
+                                    .col-md-12
+                                        .media
+                                            .media-left.col-md-3.col-xs-12.media-image
+                                                a(href='#')
+                                                    img.img-responsive.media-object(src="images/icon_tuxedo.png", alt="Icon Tuxedo")
+                                            .media-body
+                                                h2.media-heading.subheader.margin-bottom-0 Work with great companies.
+                                                h3.subheader-small Rate your employers and only work with verified companies.
+
+                                                p   All companies on Catapult are verified.
+                                                    |In fact, many of the coolest brands in the UK find their temp staff on Catapult and you can receive offers from them simply by&nbsp
+                                                    a.signing-up-link(href="#") signing up
+
+                                                p.margin-top-30 Your opinion matters to us so after each job we ask you to rate the employer. That way we can continue to build a network of amazing places to work.
+
+                    .row
+                        .col-md-12.margin-top-60.margin-bottom-60
+                            .container
+                                .row
+                                    .col-md-12
+                                        .media
+                                            .media-left.col-md-3.col-xs-12.media-image
+                                                a(href='#')
+                                                    img.img-responsive.media-object(src="images/icon_timesheet_lg.png", alt="Icon Timesheet")
+                                            .media-body
+                                                h2.media-heading.subheader.margin-bottom-0 Take control of your work.
+                                                h3.subheader-small Build your own brand and stop relying on agencies to find work for you.
+
+                                                p Temp agencies only send prospective candidates to employers that they feel would be right for the job, but they're not the ones who will be working with you!
+
+                                                p.margin-top-30   At Catapult, we're building a more honest hiring system.
+                                                    |One in which we believe people should be in control of when they work and who they work for, and employers should choose which candidates they want to work with.
+
+                    .row
+                        .col-md-12.text-center.join-now-box
+                            span
+                                a(href="#") Join Now
+                            span.glyphicon.glyphicon-play.icon-play(aria-hidden="true")
+
+
+                section#WhatStandFor
+                    .row
+                        .col-md-12.section-box.bg-green
+                            .container
+                                .row
+                                    .col-md-12.text-center
+                                        h2.subheader What do we stand for?
+
+                                .row
+                                    .col-md-5
+                                        h4.icon-subheader We believe in fair
+                                            br
+                                            | employment standards
+
+                                        p   We believe everyone deserves the right to work.
+                                            | We allow everyone to access our platform and give them the opportunity to speak for themselves.
+                                            | We treat employers and employees with fairness and transparency.
+
+                                    .col-md-7
+                                        img(src="images/feather.png", alt="Feather")
+
+                                .row
+                                    .col-md-5
+                                        h4.icon-subheader We treat people
+                                            br
+                                            | as humans
+
+                                        p   We treat all our customers equally and with respect.
+                                            | We see it as our responsibility to create a service that ensures a personal and human connection between employers and employees.
+
+                                    .col-md-7
+                                        h4.icon-subheader We want to create
+                                            br
+                                            | more freedom
+
+                                        p   We created Catapult because we’ve been on both sides of the employment equation and know how painful it can be.
+
+                                            | We want to create more freedom for people by efficiently connecting them and offering a flexible work life.
+
+
+                footer
+                    .col-md-12.section-box.bg-black
+                        .container
+                            .row
+                                .col-md-2.gutter-0
+                                    a(href="#")
+                                        img.img-responsive(src="images/footer_logo.png", alt="Catapult Logo")
+
+
+
+
+                            .row
+                                .col-md-12.gutter-0.text-right
+                                    span Copyrights &copy; All Rights Reserved by Catapult Ventures
+
+                            .row
+                                .col-md-3.gutter-0
+                                    p
+
+                                        span.headphones
+                                            i.fa.fa-headphones(aria-hidden="true")
+                                        span 44 (0) 203 841 0333
+
+                                    p
+
+                                        span.envelope
+                                            i.fa.fa-envelope-o(aria-hidden="true")
+
+                                        a.link-mail(href="mailto:hello@joincatapult.com") hello@joincatapult.com
+
+                                    p
+
+                                        span.chat
+                                            i.fa.fa-comment-o(aria-hidden="true")
+                                        span Live chat
+
+
+                                .col-md-9.gutter-0
+
+                                    ul.list-unstyled.list-inline.pull-right.footer-nav
+                                        li
+                                            a(href="#") Terms of Use
+
+                                        li
+                                            a(href="#") Privacy Policy
+
+                                        li
+                                            a(href="#") Cookie Policy
+
+
+        script(src="../bower_components/jquery/dist/jquery.js")
+        script(src="../bower_components/bootstrap/dist/js/bootstrap.js")
+

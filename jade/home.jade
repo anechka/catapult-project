@@ -1,0 +1,507 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+        title Home
+        // Bootstrap
+        link(href='../bower_components/bootstrap/dist/css/bootstrap.css', rel='stylesheet')
+        // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+        // WARNING: Respond.js doesn't work if you view the page via file://
+        //if lt IE 9
+          script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+          script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+
+        link(href="css/main.min.css", rel='stylesheet')
+        link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', rel='stylesheet')
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css", rel='stylesheet')
+
+    body
+        .container-fluid
+            .row
+                header
+                    nav.navbar.navbar-default.navbar-fixed-top.navigation
+                        .container
+                            .row
+                                .col-md-2
+                                    a(href="#")
+                                        img.img-responsive(src="images/logo_catapult.png", alt="Catapult Logo")
+
+                                .col-md-10
+                                    .navbar-header
+                                        button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbarCollapse")
+                                            span.sr-only Toggle navigation
+                                            span.icon-bar
+                                            span.icon-bar
+                                            span.icon-bar
+                                    .collapse.navbar-collapse.gutter-0(id="navbarCollapse")
+                                        ul.nav.navbar-nav.pull-right.main-navbar
+                                            li
+                                                a(href="#") How it works
+                                            li
+                                                a(href="#") Work for Catapult
+
+                                            li
+                                                a(href="#") Sign Up/Login
+
+
+
+                    .col-md-12.carousel-container
+
+                        .row
+
+                            #carousel-content.carousel.slide(data-ride='carousel')
+                                // Indicators
+                                ol.carousel-indicators
+                                    li.active(data-target='#carousel-content', data-slide-to='0')
+                                    li(data-target='#carousel-content', data-slide-to='1')
+                                    li(data-target='#carousel-content', data-slide-to='2')
+                                // Wrapper for slides
+                                .carousel-inner(role='listbox')
+                                    .item.active
+                                        .col-md-12.gutter-0.bg-man
+                                            .container
+                                                .row
+                                                    .col-md-12
+                                                        h1.staff-header
+                                                            span Staff on holiday?
+                                                            br
+                                                            | We're here for you
+
+                                            .col-md-12.col-xs-12.dropdowns-select-container
+                                                .container
+                                                    .row
+                                                        .col-md-4.col-xs-12.find-right-people Find the right people for the job
+
+                                                    .row
+                                                        .col-md-4.col-xs-6.gutter-0
+                                                            .form-group
+                                                                select.selectpicker.form-control.select-1(title="Kind of staff")
+                                                                    option Retail
+                                                                    option Retail 2
+                                                                    option Retail 3
+
+                                                        .col-md-3.col-xs-6
+                                                            .form-group
+                                                                select.selectpicker.form-control.select-2(title="Where will they work?")
+                                                                    option London
+                                                                    option Moscow
+                                                                    option New York
+
+                                                        .col-md-3.col-xs-6.gutter-0
+                                                            .form-group
+                                                                select.selectpicker.form-control.select-3(title="How many staff?")
+                                                                    option 1
+                                                                    option 2
+                                                                    option 3
+
+                                                        .col-md-2.col-xs-6.btn-search-box
+                                                            button.btn.btn-search(type="button") Search
+
+
+                                    .item
+                                        .col-md-12.gutter-0.bg-women-3
+                                            .container
+                                                .row
+                                                    .col-md-12
+                                                        h1.staff-header
+                                                            span Low on Staff?
+                                                            br
+                                                            | We're here for you
+                                            .col-md-12.col-xs-12.dropdowns-select-container
+                                                .container
+                                                    .row
+                                                        .col-md-4.col-xs-12.find-right-people Find the right people for the job
+
+                                                    .row
+                                                        .col-md-4.col-xs-6.gutter-0
+                                                            .form-group
+                                                                select.selectpicker.form-control.select-1(title="Kind of staff")
+                                                                    option Retail
+                                                                    option Retail 2
+                                                                    option Retail 3
+
+                                                        .col-md-3.col-xs-6
+                                                            .form-group
+                                                                select.selectpicker.form-control.select-2(title="Where will they work?")
+                                                                    option London
+                                                                    option Moscow
+                                                                    option New York
+
+                                                        .col-md-3.col-xs-6.gutter-0
+                                                            .form-group
+                                                                select.selectpicker.form-control.select-3(title="How many staff?")
+                                                                    option 1
+                                                                    option 2
+                                                                    option 3
+
+                                                        .col-md-2.col-xs-6.btn-search-box
+                                                            button.btn.btn-search(type="button") Search
+
+
+                                    .item
+                                        .col-md-12.gutter-0.man-waiter
+                                            .container
+                                                .row
+                                                    .col-md-12
+                                                        h1.staff-header
+                                                            span Special Event?
+                                                            br
+                                                            | We're here for you
+                                            .col-md-12.col-xs-12.dropdowns-select-container
+                                                .container
+                                                    .row
+                                                        .col-md-4.col-xs-12.find-right-people Find the right people for the job
+
+                                                    .row
+                                                        .col-md-4.col-xs-6.gutter-0
+                                                            .form-group
+                                                                select.selectpicker.form-control.select-1(title="Kind of staff")
+                                                                    option Retail
+                                                                    option Retail 2
+                                                                    option Retail 3
+
+                                                        .col-md-3.col-xs-6
+                                                            .form-group
+                                                                select.selectpicker.form-control.select-2(title="Where will they work?")
+                                                                    option London
+                                                                    option Moscow
+                                                                    option New York
+
+                                                        .col-md-3.col-xs-6.gutter-0
+                                                            .form-group
+                                                                select.selectpicker.form-control.select-3(title="How many staff?")
+                                                                    option 1
+                                                                    option 2
+                                                                    option 3
+
+                                                        .col-md-2.col-xs-6.btn-search-box
+                                                            button.btn.btn-search(type="button") Search
+
+
+
+
+                                // Controls
+                                a.left.carousel-control.control-left(href='#carousel-content', role='button', data-slide='prev')
+                                    span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                                    span.sr-only Previous
+                                a.right.carousel-control.control-right(href='#carousel-content', role='button', data-slide='next')
+                                    span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                                    span.sr-only Next
+
+
+                section#catapultStaff
+                    .row
+                        .col-md-12.section-box
+                            .container
+                                .row
+                                    .col-md-12.text-center
+                                        h2.subheader 100's of businesses already rely on Catapult staff
+
+                                .row
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/the_exhibit.png")
+
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/ecomnova.png")
+
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/jubo.png")
+
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/cecils.png")
+
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/butcher_and_grill.png")
+
+                                .row
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/maris.png")
+
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/mixology.png")
+
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/the_union_club.png")
+
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/the_calf.png")
+
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/lido_cafe.png")
+
+                                .row
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/debenhams.svg")
+
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/east.png")
+
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/henrys_coffee.png")
+
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/jacques_vert.png")
+
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/phase-eight.png")
+
+                                .row
+                                    .col-md-additional.margin-left-20
+                                        img.img-responsive(src="images/client-logos/ldo.png")
+
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/rosas.png")
+
+                                    .col-md-additional
+                                        img.img-responsive(src="images/client-logos/pingpong.png")
+
+                section#CatapultWorks
+                    .row
+                        .col-md-12.icons-container.bg-beige.section-box
+                            .container
+                                .row
+                                    .col-md-12.text-center
+                                        h2.subheader How Catapult Works
+                                .row
+                                    .col-md-4.text-center
+                                        img.img-responsive(src="images/icon_chat.png", alt="Icon chat")
+                                        h4.icon-subheader.margin-top-60 Choose
+                                        p Select local staff based on their experience, their video, and star ratings from other employers. Then send an offer and get a response within minutes.
+
+                                    .col-md-4.text-center
+                                        img.img-responsive(src="images/icon_handshake.png", alt="Icon Handshake")
+                                        h4.icon-subheader.margin-top-60 Job gets done
+                                        p Send your brief directly to our staff. They'll know where and when to show up, what to wear, who to ask for and what they’ll be doing.
+
+                                    .col-md-4.text-center
+                                        img.img-responsive(src="images/icon_stars_review.png", alt="Icon Stars Review")
+                                        h4.icon-subheader.margin-top-60 Rate & Relax
+                                        p Our staff submit a timesheet after each shift. In the click of a button you approve this and rate their performance. We take care of the payroll & admin.
+
+                section#WeDifferent
+                    .row
+                        .col-md-12.section-box
+                            .container
+                                .row
+                                    .col-md-12.text-center
+                                        h2.subheader How we’re different
+                                .row
+                                    .col-md-5.margin-bottom-60
+                                        .media
+                                            .media-left.col-md-4.col-xs-12
+                                                a(href='#')
+                                                    img.img-responsive.media-object.center-block(src="images/icon_money.png", alt="Icon Money")
+                                            .media-body
+                                                h4.media-heading.icon-subheader Low Cost
+                                                p Employing staff through Catapult is hardly more expensive than employing staff directly. You pay just 10% extra, but we do all the paperwork.
+                                                p A Catapult member of staff working a 7 hour shift at £7.20/ hour would cost you £58.25 directly including tax & NI, or £64.07 through Catapult.
+
+                                    .col-md-5.col-md-offset-2
+                                        .media
+                                            .media-left.col-md-4.col-xs-12
+                                                a(href='#')
+                                                    img.img-responsive.media-object.center-block(src="images/icon_notepad.png", alt="Icon Notepad")
+                                            .media-body
+                                                h4.media-heading.icon-subheader Your Choice
+                                                p Nobody is better placed than you to identify suitable staff. Filter based on skills, experience and see other brands staff have worked with.
+                                                p Look at star ratings to ensure exceptional performance and watch videos to confirm impeccable English language skills.
+
+                                .row
+                                    .col-md-5.margin-bottom-60
+                                        .media
+                                            .media-left.col-md-4.col-xs-12
+                                                a(href='#')
+                                                    img.img-responsive.media-object.center-block(src="images/icon_timesheet.png", alt="Icon Timesheet")
+                                            .media-body
+                                                h4.media-heading.icon-subheader Transparent
+                                                p No hidden fees, you pay just 10% on hours worked. You don't pay anything until you've confirmed a shift was performed to your satisfaction.
+                                                p It's a true meritocracy, see how staff have been rated by other employers like you. Rate our staff when you approve timesheets.
+
+                                    .col-md-5.col-md-offset-2
+                                        .media
+                                            .media-left.col-md-4.col-xs-12
+                                                a(href='#')
+                                                    img.img-responsive.media-object.center-block(src="images/icon_watch.png", alt="Icon Watch")
+                                            .media-body
+                                                h4.media-heading.icon-subheader 24/7
+                                                p Most of our offers are fulfilled within an hour, get quick confirmation whether it's last minute bookings or planning ahead for busy days.
+                                                p Unlike traditional staffing agencies, Catapult is available to book the staff you need 24/7.
+
+                                .row
+                                    .col-md-5
+                                        .media
+                                            .media-left.col-md-4.col-xs-12
+                                                a(href='#')
+                                                    img.img-responsive.media-object.center-block(src="images/icon_device.png", alt="Icon Device")
+                                            .media-body
+                                                h4.media-heading.icon-subheader Fast, Simple & Easy
+                                                p Making a booking with Catapult takes just a few minutes. If you want to to re-book the same staff for another day, it takes just seconds.
+                                                p Get instant confirmation when your offer is accepted by somebody, so you're certain who is arriving and when.
+
+                                    .col-md-5.col-md-offset-2
+                                        .media
+                                            .media-left.col-md-4.col-xs-12
+                                                a(href='#')
+                                                    img.img-responsive.media-object.center-block(src="images/icon_paper.png", alt="Icon Paper")
+                                            .media-body
+                                                h4.media-heading.icon-subheader Hassle Free
+                                                p We take care of Right To Work Checks, Payroll and Contracts. There's no paper work for you.
+                                                p You just pay for the work done, once you've confirmed that the shift was completed and the staff satisfactory.
+                section#ClientsSay
+                    .row
+                        .col-md-12.section-box.bg-beige
+                            .container
+                                .row
+                                    .col-md-12.text-center
+                                        h2.subheader What our clients say
+
+                                .row
+                                    .col-md-5
+                                        blockquote.user-blockquote
+                                            p   Refreshingly easy to use platform to book staff for an event.
+                                                | Transparency in both the staffs personality, experience and wage per hour.
+                                                | Things you simply can't get from a CV.
+                                                | Was very pleased with the friendly staff themselves and got great feedback from my client. Will definitely use you again!
+                                            footer
+                                                | Thoko Scott, Events Manager, Mixology Events
+
+
+                                    .col-md-5.col-md-offset-2
+                                        blockquote.user-blockquote
+                                            p   Delighted with the service from Catapult; from the very start efficient, helpful and reliable.
+                                                |Staff that were provided were well suited to the job.
+                                                |The team at Catapult were available throughout, addressing any small hick-ups along the way and the follow-up post the event was very good.
+                                                |Will be using Catapult for all our large functions going forward.
+                                            footer
+                                                | Operations Director, The Butcher and Grill
+
+                                .row
+                                    .col-md-5
+                                        blockquote.user-blockquote
+                                            p   It was great to see a video of the staff before they arrived - it means I can see someones personality shining through.
+
+                                            footer
+                                                | Charlie, General Manager, The Exhibit, Balham
+
+                                    .col-md-5.col-md-offset-2
+                                        blockquote.user-blockquote
+                                            p   I have used Catapult several times to recruit temp staff, often with short notice, and have found them to be very helpful and efficient.
+                                                |I particularly like the selection process, being able to see the credentials of the candidates.
+                                                |I’d highly recommend using Catapult for your recruitment requirements.
+
+                                            footer
+                                                | Charlotte Fraser, Maris Interiors (Corporate Coffee space)
+
+                section#WhatStandFor
+                    .row
+                        .col-md-12.section-box.bg-green
+                            .container
+                                .row
+                                    .col-md-12.text-center
+                                        h2.subheader What do we stand for?
+
+                                .row
+                                    .col-md-5
+                                        h4.icon-subheader We believe in fair
+                                            br
+                                            |employment standards
+
+                                        p   We believe everyone deserves the right to work.
+                                            |We allow everyone to access our platform and give them the opportunity to speak for themselves.
+                                            |We treat employers and employees with fairness and transparency.
+
+                                    .col-md-7
+                                        img(src="images/feather.png", alt="Feather")
+
+                                .row
+                                    .col-md-5
+                                        h4.icon-subheader We treat people
+                                            br
+                                            | as humans
+
+                                        p   We treat all our customers equally and with respect.
+                                            |We see it as our responsibility to create a service that ensures a personal and human connection between employers and employees.
+
+                                    .col-md-7
+                                        h4.icon-subheader We want to create
+                                            br
+                                            |more freedom
+
+                                        p   We created Catapult because we’ve been on both sides of the employment equation and know how painful it can be.
+
+                                            |We want to create more freedom for people by efficiently connecting them and offering a flexible work life.
+                footer
+                    .row
+                        .col-md-12.section-box.bg-black
+                            .container
+                                .row
+                                    .col-md-2.gutter-0
+                                        a(href="#")
+                                            img.img-responsive(src="images/footer_logo.png", alt="Catapult Logo")
+
+
+
+
+                                .row
+                                    .col-md-12.gutter-0.text-right
+                                        span Copyrights &copy; All Rights Reserved by Catapult Ventures
+
+                                .row
+                                    .col-md-3.gutter-0
+                                        p
+
+                                            span.headphones
+                                                i.fa.fa-headphones(aria-hidden="true")
+                                            span 44 (0) 203 841 0333
+
+                                        p
+
+                                            span.envelope
+                                                i.fa.fa-envelope-o(aria-hidden="true")
+
+                                            a.link-mail(href="mailto:hello@joincatapult.com") hello@joincatapult.com
+
+                                        p
+
+                                            span.chat
+                                                i.fa.fa-comment-o(aria-hidden="true")
+                                            span Live chat
+
+
+                                    .col-md-9.gutter-0
+
+                                        ul.list-unstyled.list-inline.pull-right.footer-nav
+                                            li
+                                                a(href="#") Terms of Use
+
+                                            li
+                                                a(href="#") Privacy Policy
+
+                                            li
+                                                a(href="#") Cookie Policy
+
+
+
+        script(src="../bower_components/jquery/dist/jquery.js")
+        script(src="../bower_components/bootstrap/dist/js/bootstrap.js")
+        //Latest compiled and minified JavaScript
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js')
+        // (Optional) Latest compiled and minified JavaScript translation files
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js')
+
+
+
+
+
+
+
+
+
+
+
+
+
+

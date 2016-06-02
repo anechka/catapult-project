@@ -1,0 +1,237 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+        title About Us
+        // Bootstrap
+        link(href='../bower_components/bootstrap/dist/css/bootstrap.css', rel='stylesheet')
+        // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+        // WARNING: Respond.js doesn't work if you view the page via file://
+        //if lt IE 9
+          script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+          script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+
+        link(href="css/main.min.css", rel='stylesheet')
+        link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', rel='stylesheet')
+
+    body
+        .container-fluid
+            .row
+                .col-md-12.bg-green
+                    header
+                        nav.navbar.navbar-default.navbar-fixed-top.navigation.about-us-navigation
+                            .container
+                                .row
+
+                                    .col-md-2
+                                        a(href="#")
+                                            img.img-responsive(src="images/logo_catapult.png", alt="Catapult Logo")
+
+                                    .col-md-10
+                                        .navbar-header
+                                            button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbarCollapse")
+                                                span.sr-only Toggle navigation
+                                                span.icon-bar
+                                                span.icon-bar
+                                                span.icon-bar
+                                        .collapse.navbar-collapse.gutter-0(id="navbarCollapse")
+                                            ul.nav.navbar-nav.pull-right.main-navbar.about-us-navbar
+
+                                                li
+                                                    a(href="#") Work for Catapult
+
+                                                li
+                                                    a(href="#") Sign Up/Login
+
+
+                    section#Mission
+                        .row
+                            .col-md-12
+                                .container
+                                    .row
+                                        .col-md-12
+
+                                            h1.mission-header
+                                                | We're on a mission to create
+                                                br
+                                                | full control over finding and
+                                                br
+                                                | offering short term jobs
+
+                                    .row
+                                        .col-md-additional.our-story-box
+                                            h2.text-left.subheader Our Story
+
+                                        .col-md-8.col-xs-12.box-we-created-catapult
+                                            p We created Catapult because we've been on both sides of the hiring equation and know how painful it can be.
+                                            p   We’re an ambitious team of entrepreneurs, developers and hiring specialists on a mission to build nothing less than the world’s best platform to find and offer short term jobs.
+                                                | In a highly competitive market with new players on the rise we set out to be on the forefront of creating the future of employment.
+                                                | We won’t stop until we’ve achieved this dream!
+
+                section#theTeam
+                    .row
+                        .col-md-12.section-box.member-info
+                            .container
+
+                                .row
+                                    .col-md-12
+                                        h2.subheader.the-team The Team
+
+
+                                .row
+                                    .col-md-6
+
+                                        .row
+                                            .col-md-5
+                                                a(href='#')
+                                                    img.img-responsive(src="images/catapult-members/steffen.png", alt="Steffen Wulff")
+
+                                            .col-md-7
+                                                h5.member-name Steffen Wulff
+                                                    br
+                                                    span Cofounder
+                                                p   Steffen Wulff is one of the founders, he provides the level headed direction to both the company and his Rammstein tribute barber shop quartet.
+                                                    | Loves drinking vinegar from a teacup and highly polished shoes.
+
+                                    .col-md-6
+                                        .row
+                                            .col-md-5
+                                                a(href='#')
+                                                    img.img-responsive(src="images/catapult-members/oli.png", alt="Oli Johnson")
+
+                                            .col-md-7
+                                                h5.member-name Oli Johnson
+                                                    br
+                                                    span Cofounder
+                                                p   Oli Johnson is one of the founders, is an excellent communicator, but only through the art of interpretive dance or email.
+                                                    |His proudest moment is every morning when he has finished styling his hair.
+
+                                .row
+                                    .col-md-6.margin-top-60
+
+                                        .row
+                                            .col-md-5
+                                                a(href='#')
+                                                    img.img-responsive(src="images/catapult-members/ben.png", alt="Ben Dixon")
+
+                                            .col-md-7
+                                                h5.member-name Ben Dixon
+                                                    br
+                                                    span Cofounder & CTO
+                                                p   Ben Dixon is the technical founder who’s self proclaimed highest moment was winning a look-a-like contest as a character from Lord of the Rings - though he refuses to admit which one.
+                                                    |A cereal polygamist he has a different breakfast every day.
+
+                                    .col-md-6.margin-top-60
+                                        .row
+                                            .col-md-5
+                                                a(href='#')
+                                                    img.img-responsive(src="images/catapult-members/pete.png", alt="Pete Hykin")
+
+                                            .col-md-7
+                                                h5.member-name Pete Hykin
+                                                    br
+                                                    span Head of Business Development
+                                                p   Pete Hykin heads the sales team. He’s efficient, ruthless and tactical. But only at connect four. Loves puppies and wearing slippers in the office.
+                                                    |Owns a complete set of signed High school musical movies.
+
+                                .row
+                                    .col-md-6.margin-top-60
+
+                                        .row
+                                            .col-md-5
+                                                a(href='#')
+                                                    img.img-responsive(src="images/catapult-members/james.png", alt="James White")
+
+                                            .col-md-7
+                                                h5.member-name James White
+                                                    br
+                                                    span Lead Frontend Developer
+                                                p   James White is part of the development team and spends most of his time in the dark, debugging things he doesn’t really understand.
+                                                    |Goes to the gym frequently with little effect, no-one is really sure what he does there. Once ate a vegetable by mistake.
+
+                                    .col-md-6.margin-top-60
+                                        .row
+                                            .col-md-5
+                                                a(href='#')
+                                                    img.img-responsive(src="images/catapult-members/gaby.png", alt="Gaby Buonafina")
+
+                                            .col-md-7
+                                                h5.member-name Gaby Buonafina
+                                                    br
+                                                    span Business Development
+                                                p   Jette is as committed to Business Development as she is to building a friendly and welcoming office environment.
+                                                    |Unfortunately Jette lost the ability to express emotions after an elaborate practical joke went wrong involving a taxidermied crocodile stuffed with hard boiled eggs and two hundred pounds of soft cheese.
+                                                    |Dislikes emoji, red ink and practical jokes.
+
+
+                                .row
+                                    .col-md-6
+
+                                        .row
+                                            .col-md-5
+                                                a(href='#')
+                                                    img.img-responsive(src="images/catapult-members/kevin.png", alt="Kevin Edwards")
+
+                                            .col-md-7
+                                                h5.member-name Kevin Edwards
+                                                    br
+                                                    span Lead Backend Developer
+                                                p   Kevin Edwards is part of the development team. He spends his days grimacing at his screen, his lunch and the people around him.
+                                                    |Is deeply allergic to criticism and onions.
+                                                    |He is very proud of his collection of unusual moulds.
+
+
+
+
+                footer
+                    .row
+                        .col-md-12.section-box.bg-black
+                            .container
+                                .row
+                                    .col-md-2.gutter-0
+                                        a(href="#")
+                                            img.img-responsive(src="images/footer_logo.png", alt="Catapult Logo")
+
+                                .row
+                                    .col-md-12.gutter-0.text-right
+                                        span Copyrights &copy; All Rights Reserved by Catapult Ventures
+
+                                .row
+                                    .col-md-3.gutter-0
+                                        p
+
+                                            span.headphones
+                                                i.fa.fa-headphones(aria-hidden="true")
+                                            span 44 (0) 203 841 0333
+
+                                        p
+
+                                            span.envelope
+                                                i.fa.fa-envelope-o(aria-hidden="true")
+
+                                            a.link-mail(href="mailto:hello@joincatapult.com") hello@joincatapult.com
+
+                                        p
+
+                                            span.chat
+                                                i.fa.fa-comment-o(aria-hidden="true")
+                                            span Live chat
+
+
+                                    .col-md-9.gutter-0
+
+                                        ul.list-unstyled.list-inline.pull-right.footer-nav
+                                            li
+                                                a(href="#") Terms of Use
+
+                                            li
+                                                a(href="#") Privacy Policy
+
+                                            li
+                                                a(href="#") Cookie Policy
+
+        script(src="../bower_components/jquery/dist/jquery.js")
+        script(src="../bower_components/bootstrap/dist/js/bootstrap.js")
